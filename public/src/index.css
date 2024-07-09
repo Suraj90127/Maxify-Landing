@@ -1623,6 +1623,7 @@ nav {
 
 .contact-content form input[type="text"],
 .contact-content form input[type="email"],
+.contact-content form input[type="number"],
 .contact-content form textarea,
 .contact-content form button,
 .contact-content form input[type="file"] {

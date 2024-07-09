@@ -39,10 +39,10 @@
           <i class="bx bx-x"></i>
         </div>
         <ul class="links">
-          <li><a href="https://maxifysolution.com/" target="_blank">HOME</a></li>
-          <li><a href="https://maxifysolution.com/about-company/" target="_blank">ABOUT US</a></li>
+          <li><a href="#home" >HOME</a></li>
+          <li><a href="#about" >ABOUT US</a></li>
           <li><a href="#services">SERVICES</a></li>
-          <li><a href="https://maxifysolution.com/success/" target="_blank">OUR PROJECTS</a></li>
+          <li><a href="#projects" >OUR PROJECTS</a></li>
           <!-- <li><a href="../Pages/Contact.html">CONTACT</a></li> -->
           <li>
             <a href="#contact" class="search-box"><button>Get Quote</button></a>
@@ -72,7 +72,7 @@
   </div>
 
   <!--  -->
-  <div class="container-menu relative py-5">
+  <div class="container-menu relative py-5" id="home">
     <div class="box relative"
       data-description="Persuasive web designs contribute to the quality conversion of leads into a potential pond of traffic, elevating the success of your business operations.">
       <img src="./src/Assets/18 (1).webp" class="absolute top-0 left-0 object-cover" style="z-index: 0; height: 100%; width: 100%;
@@ -117,7 +117,7 @@
   </div>
 
   <!--  -->
-  <div class="second-section">
+  <div class="second-section" id="about">
     <div class="left-img">
       <img src="./src/Assets/17.webp" alt="">
     </div>
@@ -570,7 +570,7 @@
       </div>
       <div class="plan-card  plan3">
         <h1>Custom Plan</h1>
-        <p class="price">₹ ????</p>
+        <p class="price">$ ????</p>
         <h2>Featured Includes</h2>
         <ul class="features">
           <li>&nbsp;&nbsp;Pages: According to Requirement</li>
@@ -727,7 +727,7 @@
       </div>
       <div class="plan-card plan6">
         <h1>Ultimate Plan</h1>
-        <p class="price">₹ ????</p>
+        <p class="price">$ ????</p>
         <h2>Featured Includes</h2>
         <ul class="features">
           <li>Pages: According to the requirements</li>
@@ -785,7 +785,7 @@
 
   <!-- Why choose Us -->
 
-  <div class="container-choose">
+  <div class="container-choose" id="plan-in">
     <div class="content">
       <div class="text-section-choose">
         <span class="highlight">Why Choose Us</span>
@@ -806,6 +806,49 @@
               class="icon-choose">
             <span>Our design and development services are pocket friendly<br><small>- Starting from ₹ 7,999/- Only (18%
                 GST applicable)</small></span>
+          </li>
+          <li>
+            <img src="./src/Assets/Clock.webp" alt="Project delivery on time with proper analysis and development"
+              class="icon-choose">
+            <span>Project delivery on time with proper analysis and development of a schedule for project
+              completion.</span>
+          </li>
+          <li>
+            <img src="./src/Assets/Approval copy.webp" alt="High-end services with 100% expert assistance"
+              class="icon-choose">
+            <span>High-end services with 100% expert assistance and a wide range of modern tools and parameters.</span>
+          </li>
+          <li>
+            <img src="./src/Assets/Online Support.webp" alt="24*7 Hours call support" class="icon-choose">
+            <span>24*7 Hours call support</span>
+          </li>
+        </ul>
+      </div>
+      <div class="image-section">
+        <img src="./src/Assets/5 (1).webp" alt="Team working on IT strategies" class="image">
+      </div>
+    </div>
+  </div>
+  <div class="container-choose"id="plan-us">
+    <div class="content">
+      <div class="text-section-choose">
+        <span class="highlight">Why Choose Us</span>
+        <h1>Tailored IT Strategies for Your Business</h1>
+        <p class="subheading">The Top Web Design Developers in India!</p>
+        <ul class="benefits-list">
+          <li>
+            <img src="./src/Assets/Website.webp" alt="1 Year Free Domain/Hosting" class="icon-choose">
+            <span>1 Year Free Domain/Hosting</span>
+          </li>
+          <li>
+            <img src="./src/Assets/Responsive.webp" alt="Dynamic Websites with attractive web designs"
+              class="icon-choose">
+            <span>Dynamic Websites with attractive web designs</span>
+          </li>
+          <li>
+            <img src="./src/Assets/Money Bag.webp" alt="Our design and development services are pocket friendly"
+              class="icon-choose">
+            <span>Our design and development services are pocket friendly<br><small>- Starting from $ 499/</small></span>
           </li>
           <li>
             <img src="./src/Assets/Clock.webp" alt="Project delivery on time with proper analysis and development"
@@ -870,7 +913,7 @@
             </div>
           </div>
         </div>
-        <div class="project large">
+        <div class="project large" id="projects">
           <img src="./src/Assets/8.webp" alt="Project 2">
           <div class="caption">
             <div class="card">
@@ -932,7 +975,7 @@
             design companies in India thanks to our dedication to quality and diligent work culture. Being listed as one
             of the leading providers of design services makes Maxify Developer very proud.</p>
         </div>
-        <a href="#" class="portfolio-btn">All Portfolio →</a>
+        <a href="https://maxifysolution.com/success/" target="_blank" class="portfolio-btn">All Portfolio →</a>
       </div>
       <div class="container-slider">
         <div class="content-slider">
@@ -1040,24 +1083,24 @@
         <h2>Get in <span>touch</span></h2>
         <p>Please take a moment to get in touch, we will get back to you shortly.</p>
         <form id="contact-form">
-          <input type="text" id="contactName" name="contactName" placeholder="Contact name" required>
+          <input type="text" id="contactName" name="contactName" placeholder="Contact name*" required>
 
-          <input type="text" id="street" name="street" placeholder="Street" required>
+          <input type="text" id="street" name="street" placeholder="Street">
 
           <div class="form-group">
             <div class="input-half">
-              <input type="text" id="city" name="city" placeholder="City" required>
+              <input type="text" id="city" name="city" placeholder="City" >
             </div>
             <div class="input-half">
-              <input type="text" id="postcode" name="postcode" placeholder="Postcode" required>
+              <input type="text" id="postcode" name="postcode" placeholder="Postcode" >
             </div>
           </div>
 
-          <input type="text" id="phone" name="phone" placeholder="Contact Phone" required>
+          <input type="number" id="phone" name="phone" placeholder="Contact Phone*" required>
 
-          <input type="email" id="email" name="email" placeholder="E-mail" required>
+          <input type="email" id="email" name="email" placeholder="E-mail*" required>
 
-          <textarea id="idea" name="idea" placeholder="Let's talk about your idea" required></textarea>
+          <textarea id="idea" name="idea" placeholder="Please send a messege to get the conversation started" required></textarea>
 
           <label class="checkbox-label">
             <input type="checkbox" name="nda" id="nda">
@@ -1085,13 +1128,13 @@
         <img src="./src/Assets/logo.png" style="width: 200px;" alt="">
 
         <p class="footer-links">
-          <a href="https://maxifysolution.com/" target="_blank" class="link-1">Home</a>
+          <a href="#home" class="link-1">Home</a>
 
-          <a href="https://maxifysolution.com/about-company/" target="_blank">About us</a>
+          <a href="#about">About us</a>
 
           <a href="#services">Services</a>
 
-          <a href="https://maxifysolution.com/success/" target="_blank">Our Projects</a>
+          <a href="#projects">Our Projects</a>
 
           <a href="#faq">Faq</a>
 
