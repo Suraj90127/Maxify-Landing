@@ -1804,7 +1804,7 @@ input[type=submit]:focus {
   resize: vertical;
   min-height: 100px;
 }
-.contact-content form textarea {
+.contact-content1 form textarea {
   resize: vertical;
   min-height: 60px;
 }
@@ -1843,8 +1843,9 @@ input[type=submit]:focus {
 
 .contact-content1 form .checkbox-label input[type="checkbox"] {
   margin-right: 8px;
-  height: 20px;
-  width: 20px;
+  margin-top: 10px;
+  height: 15px;
+  width: 15px;
 }
 
 .contact-content form .file-upload-label {
