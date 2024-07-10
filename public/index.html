@@ -803,7 +803,7 @@
 
   <!-- Why choose Us -->
 
-  <div class="container-choose" id="plan-in">
+  <div class="container-choose">
     <div class="content">
       <div class="text-section-choose">
         <span class="highlight">Why Choose Us</span>
@@ -822,51 +822,8 @@
           <li>
             <img src="./src/Assets/Money Bag.webp" alt="Our design and development services are pocket friendly"
               class="icon-choose">
-            <span>Our design and development services are pocket friendly<br><small>- Starting from ₹ 7,999/- Only (18%
-                GST applicable)</small></span>
-          </li>
-          <li>
-            <img src="./src/Assets/Clock.webp" alt="Project delivery on time with proper analysis and development"
-              class="icon-choose">
-            <span>Project delivery on time with proper analysis and development of a schedule for project
-              completion.</span>
-          </li>
-          <li>
-            <img src="./src/Assets/Approval copy.webp" alt="High-end services with 100% expert assistance"
-              class="icon-choose">
-            <span>High-end services with 100% expert assistance and a wide range of modern tools and parameters.</span>
-          </li>
-          <li>
-            <img src="./src/Assets/Online Support.webp" alt="24*7 Hours call support" class="icon-choose">
-            <span>24*7 Hours call support</span>
-          </li>
-        </ul>
-      </div>
-      <div class="image-section">
-        <img src="./src/Assets/5 (1).webp" alt="Team working on IT strategies" class="image">
-      </div>
-    </div>
-  </div>
-  <div class="container-choose"id="plan-us">
-    <div class="content">
-      <div class="text-section-choose">
-        <span class="highlight">Why Choose Us</span>
-        <h1>Tailored IT Strategies for Your Business</h1>
-        <p class="subheading">The Top Web Design Developers in India!</p>
-        <ul class="benefits-list">
-          <li>
-            <img src="./src/Assets/Website.webp" alt="1 Year Free Domain/Hosting" class="icon-choose">
-            <span>1 Year Free Domain/Hosting</span>
-          </li>
-          <li>
-            <img src="./src/Assets/Responsive.webp" alt="Dynamic Websites with attractive web designs"
-              class="icon-choose">
-            <span>Dynamic Websites with attractive web designs</span>
-          </li>
-          <li>
-            <img src="./src/Assets/Money Bag.webp" alt="Our design and development services are pocket friendly"
-              class="icon-choose">
-            <span>Our design and development services are pocket friendly<br><small>- Starting from $ 499/</small></span>
+            <span>Our design and development services are pocket friendly<br><small id="gst-in">- Starting from ₹ 7,999/- Only (18%
+                GST applicable)</small><small id="gst-us">- Starting from $ 499/</small></span>
           </li>
           <li>
             <img src="./src/Assets/Clock.webp" alt="Project delivery on time with proper analysis and development"
@@ -1131,7 +1088,7 @@
 
       <div class="map-container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108852.64967372696!2d74.3243776!3d31.506432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919051cb6d08ffd%3A0x5a61626c98977248!2sJoyland!5e0!3m2!1sen!2s!4v1720365561236!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d437.94898951084804!2d77.31535415943979!3d28.58201447114941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8cb2844875948653%3A0x31a70beb6225a223!2sMaxify%20Web%20Solutions%20pvt%20ltd!5e0!3m2!1sen!2sin!4v1716287100411!5m2!1sen!2sin"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -1247,6 +1204,8 @@
 
       const planIn = document.getElementById('plan-in');
       const planUs = document.getElementById('plan-us');
+      const gstIn = document.getElementById('gst-in');
+      const gstUs = document.getElementById('gst-us');
 
 
       if (currentUrl.includes('in')) {
@@ -1262,6 +1221,22 @@
         }
         if (planUs) {
           planUs.style.display = 'flex';
+        }
+      }
+      // 
+      if (currentUrl.includes('in')) {
+        if (gstIn) {
+          gstIn.style.display = 'block';
+        }
+        if (gstUs) {
+          gstUs.style.display = 'none';
+        }
+      } else if (currentUrl.includes('us')) {
+        if (gstIn) {
+          gstIn.style.display = 'none';
+        }
+        if (gstUs) {
+          gstUs.style.display = 'block';
         }
       }
       // 
