@@ -7,10 +7,6 @@ body {
   font-family: "Space Grotesk", sans-serif;
 
 }
-.contect-button{
-  font-family: "Space Grotesk", sans-serif;
-  
-}
 html {
   scroll-behavior: smooth;
 }
@@ -43,7 +39,6 @@ html {
   border-radius: 5px;
   z-index: 999;
 }
-
 nav {
   position: sticky;
   top: 0;
