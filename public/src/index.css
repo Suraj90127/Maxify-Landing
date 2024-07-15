@@ -7,7 +7,10 @@ body {
   font-family: "Space Grotesk", sans-serif;
 
 }
-
+.contect-button{
+  font-family: "Space Grotesk", sans-serif;
+  
+}
 html {
   scroll-behavior: smooth;
 }
